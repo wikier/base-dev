@@ -1,2 +1,1 @@
-# docker-base-dev
-Docker images with my basic development environment
+Docker image with my basic development environment.
