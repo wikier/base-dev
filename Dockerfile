@@ -25,7 +25,7 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN npm install -g grunt
 RUN npm install -g grunt-cli
 RUN npm install -g bower
-RUN echo '{ "allow_root": true }' > /root/.bowerrc
+RUN echo '{ "allow_root": true }' > ~/.bowerrc
 
 RUN apt-get clean -y  \
     && apt-get autoclean -y  \
