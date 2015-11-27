@@ -15,7 +15,7 @@ ENV LANG C.UTF-8
 ENV LANGUAGE C.UTF-8
 ENV LC_ALL C.UTF-8
 
-RUN apt-get update \ 
+RUN apt-get update -qq \ 
     && apt-get install -y \
         nodejs npm nodejs-legacy \
         ruby-compass \
@@ -25,9 +25,10 @@ RUN apt-get update \
         maven \
         openjdk-8-jdk
 
-RUN npm install -g grunt
-RUN npm install -g grunt-cli
-RUN npm install -g bower
+RUN npm install -g \
+    grunt \
+    grunt-cli \
+    bower \
 RUN echo '{ "allow_root": true }' > ~/.bowerrc
 
 RUN apt-get clean -y  \
