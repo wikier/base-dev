@@ -31,7 +31,7 @@ RUN apt-get update -qq \
 RUN npm install -g \
     grunt \
     grunt-cli \
-    bower \
+    bower
 RUN echo '{ "allow_root": true }' > ~/.bowerrc
 
 RUN apt-get clean -y  \
