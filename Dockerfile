@@ -15,15 +15,18 @@ ENV LANG C.UTF-8
 ENV LANGUAGE C.UTF-8
 ENV LC_ALL C.UTF-8
 
-RUN apt-get update -qq \ 
+RUN apt-get update -qq \
     && apt-get install -y \
-        nodejs npm nodejs-legacy \
-        ruby-compass \
-        git git-core \
-        wget \
-        zip unzip \
-        maven \
-        openjdk-8-jdk
+       nodejs \
+       nodejs-legacy \
+       npm \
+       ruby-compass \
+       git \
+       wget \
+       unzip \
+       zip \
+       openjdk-8-jdk \
+       maven
 
 RUN npm install -g \
     grunt \
