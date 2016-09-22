@@ -25,6 +25,7 @@ RUN apt-get update -qq \
        wget \
        unzip \
        zip \
+       mongo \
        openjdk-8-jdk \
        maven
 
