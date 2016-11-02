@@ -1,7 +1,7 @@
 # Dockerfile for a base dev environment
 
 FROM debian:stretch
-MAINTAINER sergio.@wikier.org
+MAINTAINER sergio@wikier.org
 
 ENV DEBIAN_FRONTEND noninteractive
 
